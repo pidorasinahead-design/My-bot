@@ -4,15 +4,11 @@ from telebot import types
 
 TOKEN = "8308935041:AAEzauEkWqRCiVnDo7khmb29v7gjmYNmgDo"
 
-if not TOKEN or TOKEN == "8308935041:AAEzauEkWqRCiVnDo7khmb29v7gjmYNmgDo":
-    raise ValueError("Ты не вставил токен бота")
-
 CHANNEL = "@pizzabotinfo"
 SUPPORT_USERNAME = "@maharaga_coder"
-MENU_PHOTO = AgACAgIAAxkBAAIBl2m5e_6xlcedCX01z9KAWL4PlWOsAALnEWsb7gzQSVRyFljghMRfAQADAgADeQADOgQ
+MENU_PHOTO = "AgACAgIAAxkBAAIBl2m5e_6xlcedCX01z9KAWL4PlWOsAALnEWsb7gzQSVRyFljghMRfAQADAgADeQADOgQ"
 
 bot = telebot.TeleBot(TOKEN)
-
 users = {}
 
 def get_user(user_id, full_name="Пользователь", username=None):
